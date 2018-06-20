@@ -45,10 +45,10 @@ def iterate_through_keys
 
   upcased_cities = []
   counter = 0
-    olympics_hash.each_key {|place|
+    olympics_hash.each_key |place|
     upcased_cities[counter] = place.upcase
     counter += 1
-  }
+  
   puts upcased_cities
 end
 
